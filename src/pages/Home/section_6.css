@@ -1,0 +1,83 @@
+.client_Container{
+    width:100vw;
+    height:500px;
+    gap: 24px;    
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.client_Section_description{
+    width:80.1vw;
+    gap:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client_Section_description h1{
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.client_section_paragraph{
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+}
+.client_section_clients{
+    margin-top: 2px;
+    padding:0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.client_section_clients img{
+    border:none;
+    border-radius: 100%;
+    width:30px;
+    height:30px;
+    background-color: gray;
+}
+.Client_section_boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid grey 2px;
+    padding:10px;
+} 
+.Client_section_boxes h2{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#0E94FB;
+
+
+}
+.Client_section_boxes p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+.Client_section_boxes:hover{
+  border-top:solid 3px  #0060AA;
+
+   
+}
+/* card */

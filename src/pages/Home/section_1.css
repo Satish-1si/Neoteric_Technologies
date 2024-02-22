@@ -1,0 +1,49 @@
+.PromoContainer{
+    height:500px;
+    width: 100vw;
+    padding:100px;
+    display: flex;
+    align-items: center;
+    border: solid;
+}
+.gradientHeading {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(222deg, #0060aa 1.65%, #0e94fb 107.33%);
+    font: 700 36px/133% Inter, sans-serif;
+  }
+  .usp-title {
+    color: transparent;
+    background-image: linear-gradient(222deg, #0060aa 1.65%, #0e94fb 107.33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162.5%;
+    font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    max-width: 156px;
+    text-align: center;
+  }
+  .usp-title_1{
+    color: transparent;
+    background-image: linear-gradient(222deg, #0060aa 1.65%, #0e94fb 107.33%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162.5%;
+    font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+    max-width: 156px;
+  }
+  .unique-selling-points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.sectionContainer{
+   width: 80.1vw;
+}

@@ -1,0 +1,27 @@
+.section_container{
+    width:100vw;
+    height:600px;
+    position: relative;
+}
+
+.icons_container{
+    width:23%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.TextContainer{
+    width:40%;
+    color: aliceblue;
+    position: absolute;
+    bottom: 34px;
+    left:34px
+
+}
+.pageNo{
+    padding-top:3px;
+    color:white;
+    text-align: center;
+   
+}

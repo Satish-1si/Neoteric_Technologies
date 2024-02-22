@@ -1,0 +1,21 @@
+*{
+  padding:0px;
+  margin: 0px;
+  box-sizing: border-box;
+  
+}
+.LogoContainer{
+  width:350px;
+  height:200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding:2px;
+}
+.LogoContainer img{
+     width:50%;
+     height:30%;
+ 
+}
+
