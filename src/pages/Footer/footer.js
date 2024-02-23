@@ -4,14 +4,13 @@ import { SocialLinks } from './socialLinks'
 import {LogoImf} from './LogoImf.js'
 import "./footer.css"
 
-export const Footer = () => {
+export const Footer = ({Mode}) => {
   return (
-    <div className='FooterContainer'>
+    <div className='FooterContainer' style={Mode?{backgroundColor:"black",color:"white"}:{backgroundColor:"white",color:"black"}}>
        <div className='FooterContainerSection'>
-        <LogoImf/>
-        <SocialLinks/>
-        <ServiceLinks/>
-
+         <LogoImf/>
+         <SocialLinks/>
+         <ServiceLinks/>
        </div>
         
     </div>

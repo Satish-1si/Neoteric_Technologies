@@ -65,10 +65,10 @@ const HeroSection=()=> {
   );
 }
 
-const HomeSection=()=>{
+const HomeSection=({Mode})=>{
       return(
-           <div>
-              <HeroSection/>
+                <div style={Mode?{backgroundColor:"black",color:"white"}:{backgroundColor:"black",color:"white"}}>
+              <HeroSection />
               <PromoContent/>
               <SolutionBanner/>
               <TechnologySolutions/>
@@ -76,7 +76,6 @@ const HomeSection=()=>{
               <Contacts_Section/>
               <Clients/>
               <News_Blogs/>
-              
            </div>
       )
 }

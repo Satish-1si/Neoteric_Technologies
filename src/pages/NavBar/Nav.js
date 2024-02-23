@@ -2,7 +2,11 @@ import React from 'react'
 import "./Nav.css"
 import { NavLink,Link} from 'react-router-dom';
 import {v4} from "uuid"
-export const Navbar=()=> {
+import { useRecoilState } from 'recoil';
+import {HandleBackgrond} from "../stateMagement/LightDarkMode.js"
+import BlackLogo from "./images/Neoteric-Technology-Logo 1 1.svg"
+export const Navbar=({Mode})=> {
+  const [LightModeState,setLightModeState]=useRecoilState(HandleBackgrond);
   const navItems = [
     { id: 1, title: "Services",  path:"services"  },
     { id: 2, title: "Industries",  path:"industries"  },
@@ -14,16 +18,18 @@ export const Navbar=()=> {
 
   return (
     <>
-      <header className="header">
+
+      <header className="header" style={LightModeState?{backgroundColor:"black",color:"white"}:{backgroundColor:"white",color:"black"}}>
         <nav className="navbar">
           <Link to="/">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2f18c2813b583dc509bf69e8521b5926c4c9b74385d988ed7cb045a71458845e?apiKey=51553a7002134689b5fc60911a6e889" alt="Company Logo" className="navbar-logo" />
+          <img src={BlackLogo} alt="Company Logo" className="navbar-logo" />
           </Link>
           <ul className="nav-list">
             {
-              navItems.map(({title,path})=> <li key={v4()}><NavLink to={path} activeClassName="active">{title}</NavLink></li>)
+              navItems.map(({title,path})=> <li key={v4()}><NavLink to={path} >{title}</NavLink></li>)
             }
           </ul>
+          <h1 onClick={()=>setLightModeState((currentState)=>!currentState)}>bg</h1>
         </nav>
       </header>
        

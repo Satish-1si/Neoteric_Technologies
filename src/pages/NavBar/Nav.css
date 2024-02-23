@@ -1,9 +1,7 @@
 a{
   text-decoration: none;
 }
-body{
-  position: relative;
-}
+
 .header {
     background-color: #fff;
     display: flex;
@@ -16,9 +14,6 @@ body{
     line-height: 100%;
     padding: 10px;
     width:100vw;
-    position: fixed;
-    top:0px;
-    z-index:1;
     
   }
   @media (max-width: 991px) {

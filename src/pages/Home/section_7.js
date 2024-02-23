@@ -1,4 +1,5 @@
 import "./section_7.css";
+import { v4 } from "uuid";
 
 const Source=[
     {
@@ -44,7 +45,7 @@ const Cards = () => {
 		<article  className="articleCard">
 			{
                 Source.map(({image,paragraph,heading,btn_txt})=>{
-                    return <div className="article_sub_card">
+                    return <div className="article_sub_card" key={v4()}>
                     <img
                         loading="lazy"
                         src={image}
