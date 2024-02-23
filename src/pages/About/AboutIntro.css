@@ -1,0 +1,24 @@
+.AboutIntro-main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px;
+    margin-top: 50px;
+    justify-content: center;
+    height: 720px;
+    background-image: url("./Images/aboutBG1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
+.AboutIntro-heading{
+    font-size: 128px;
+    font-weight: 700;
+}
+
+.AboutIntro-description{
+    font-size: 16px;
+    width: 70%;
+}

@@ -1,0 +1,28 @@
+.OurVision-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F5F5F7;
+    gap: 20px;
+    padding: 100px;
+    height: 720px;
+    background-image: url("./Images//about3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.OurVision-left{
+    width: 50%;
+}
+.OurVision-right{
+    width: 50%;
+}
+.OurVision-heading{
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.OurVision-description{
+    font-size: 16px;
+}
