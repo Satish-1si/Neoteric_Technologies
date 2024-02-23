@@ -3,14 +3,12 @@
     flex-direction: column;
     gap: 20px;
     padding: 100px;
-    margin-top: 50px;
     justify-content: center;
     height: 720px;
     background-image: url("./Images/aboutBG1.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
-    
+    background-position: right;    
 }
 
 .AboutIntro-heading{
