@@ -185,7 +185,6 @@ body{
       margin-left: 33%;
     }
   
-    /*   */
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
