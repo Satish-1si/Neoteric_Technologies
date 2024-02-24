@@ -16,7 +16,7 @@ export const Navbar = () => {
 
   const [isChecked, setisChecked] = useState(false);
   const handleHamburger = () => {
-    setisChecked(true);
+    setisChecked(!isChecked);
   };
   const handleCheckboxChange = (e) => {
     setisChecked(!isChecked);
@@ -25,7 +25,12 @@ export const Navbar = () => {
   return (
     <>
       <header className="nav">
-        <input type="checkbox" id="nav-check" checked={!isChecked} onChange={handleCheckboxChange} />
+        <input
+          type="checkbox"
+          id="nav-check"
+          checked={!isChecked}
+          onChange={handleCheckboxChange}
+        />
         <div className="nav-header col-lg-3">
           <div className="nav-title">
             <Link to="/">

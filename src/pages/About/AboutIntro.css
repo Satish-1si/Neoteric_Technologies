@@ -33,3 +33,17 @@
         width: 65%;
     }
 }
+
+@media(max-width:768px){
+    .AboutIntro-main{
+        align-items: center;
+        padding: 15px;
+    }
+    .AboutIntro-heading{
+        font-size: 50px;
+    }
+    .AboutIntro-description{
+        font-size: 15px;
+        width: 90%;
+    }
+}
