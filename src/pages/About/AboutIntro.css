@@ -37,7 +37,8 @@
 @media(max-width:768px){
     .AboutIntro-main{
         align-items: center;
-        padding: 15px;
+        padding: 0 15px;
+        height: auto;
     }
     .AboutIntro-heading{
         font-size: 50px;
@@ -45,5 +46,6 @@
     .AboutIntro-description{
         font-size: 15px;
         width: 90%;
+        padding-bottom: 10px;
     }
 }

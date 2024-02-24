@@ -75,6 +75,7 @@
     }
     .OurVision-right{
         position: absolute;
+        width: 80%;
         display: flex;
         border-radius: 6px;
         flex-direction: column;
