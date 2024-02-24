@@ -19,7 +19,7 @@ export const Navbar=({Mode})=> {
   return (
     <>
 
-      <header className="header" style={LightModeState?{backgroundColor:"black",color:"white"}:{backgroundColor:"white",color:"black"}}>
+      <header className="header" style={LightModeState?{backgroundColor:"white",color:"black"}:{backgroundColor:"black",color:"white"}}>
         <nav className="navbar">
           <Link to="/">
           <img src={BlackLogo} alt="Company Logo" className="navbar-logo" />

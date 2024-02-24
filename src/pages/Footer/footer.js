@@ -6,7 +6,7 @@ import "./footer.css"
 
 export const Footer = ({Mode}) => {
   return (
-    <div className='FooterContainer' style={Mode?{backgroundColor:"black",color:"white"}:{backgroundColor:"white",color:"black"}}>
+    <div className='FooterContainer' style={Mode?{backgroundColor:"white",color:"black"}:{backgroundColor:"black",color:"white"}}>
        <div className='FooterContainerSection'>
          <LogoImf/>
          <SocialLinks/>
