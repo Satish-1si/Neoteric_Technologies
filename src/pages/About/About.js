@@ -1,12 +1,16 @@
-import React from 'react'
+import React from "react";
+import AboutIntro from "./AboutIntro";
+import OurMission from "./OurMission";
+import OurVision from "./OurVision";
 
-const About = ({Mode}) => {
-  console.log(Mode)
+import "./About.css";
+
+export default function About() {
   return (
-    <div style={Mode?{backgroundColor:"white",height:"100vh",color:"black"}:{backgroundColor:"black",height:"100vh",color:"white"}}>
-       <h1>About</h1>
-    </div>
-  )
+    <>
+      <AboutIntro />
+      <OurMission />
+      <OurVision />
+    </>
+  );
 }
-
-export default About

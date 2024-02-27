@@ -1,0 +1,104 @@
+.OurVision-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F5F5F7;
+    gap: 20px;
+    padding: 100px;
+    height: 720px;
+    background-image: url("./Images//about3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+}
+.OurVision-left{
+    width: 65%;
+}
+.OurVision-right{
+    width: 35%;
+}
+.OurVision-heading{
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.OurVision-description{
+    font-size: 16px;
+}
+
+@media(max-width:1100px){
+    .OurVision-main{
+        height: 400px;
+        padding: 0 50px;
+    }
+    .OurVision-heading{
+        font-size: 50px;
+    }
+    .OurVision-left{
+        width: 40%;
+    }
+    .OurVision-right{
+        width: 60%;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .OurVision-description{
+        font-size: 15px;
+        width: 80%;
+    }
+}
+@media(max-width:768px){
+    .OurVision-main{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        background-image: none;
+        height: 550px;
+    }
+    .OurVision-left{
+        display: block;
+        height: 300px;
+        width: 100%;
+        background-image: url("./Images/responsive2.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .OurVision-description{
+        width: 80%;
+        font-size: 14px;
+    }
+    .OurVision-right{
+        position: absolute;
+        width: 80%;
+        display: flex;
+        border-radius: 6px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 10%;
+        padding: 2% 3%;
+        top: 27%;
+        background-color: #f1f6f7;
+        box-shadow: 0px 0px 11px -2px
+    }
+    .OurVision-heading{
+        font-size: 45px;
+    }
+
+
+}
+@media(max-width:570px){
+    .OurVision-main{
+        height: 720px;
+    }
+    .OurVision-heading {
+        font-size: 40px;
+    }
+}

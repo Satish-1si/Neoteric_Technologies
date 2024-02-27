@@ -65,18 +65,19 @@ const HeroSection=()=> {
   );
 }
 
-const HomeSection=({Mode})=>{
+const HomeSection=()=>{
       return(
-                <div style={Mode?{backgroundColor:"white",color:"black"}:{backgroundColor:"black",color:"white"}}>
-                   <HeroSection />
-                   <PromoContent/>
-                   <SolutionBanner/>
-                   <TechnologySolutions/>
-                   <Technologies/>
-                   <Contacts_Section/>
-                   <Clients/>
-                   <News_Blogs/>
-               </div>
+           <div>
+              <HeroSection/>
+              <PromoContent/>
+              <SolutionBanner/>
+              <TechnologySolutions/>
+              <Technologies/>
+              <Contacts_Section/>
+              <Clients/>
+              <News_Blogs/>
+              
+           </div>
       )
 }
 export default HomeSection
