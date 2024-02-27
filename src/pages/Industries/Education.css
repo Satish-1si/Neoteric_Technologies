@@ -1,0 +1,36 @@
+.Education-main{
+    width: 100%;
+    padding: 100px;
+    gap: 40px;
+    background-image: url("./Images/industry4.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;  
+}
+.Education-main-left{
+    width: 40%;
+}
+.Education-main-right{
+    width: 60%;
+}
+.Education-title{
+    font-size: 64px;
+}
+
+.Education-description{
+    font-size: 16px;
+}
+
+.Education-viewProjects{
+    padding: 10px 0px;
+    font-size: 20px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0060AA;
+    color: #0E94FB;
+    border-radius: 100px;
+    cursor: pointer;
+    
+}

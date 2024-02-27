@@ -1,0 +1,36 @@
+.Retails-main{
+    width: 100%;
+    padding: 100px;
+    gap: 40px;
+    background-image: url("./Images/industry3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+.Retails-main-left{
+    width: 60%;
+}
+.Retails-main-right{
+    width: 40%;
+}
+.Retails-title{
+    font-size: 64px;
+}
+
+.Retails-description{
+    font-size: 16px;
+}
+
+.Retails-viewProjects{
+    padding: 10px 0px;
+    font-size: 20px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0060AA;
+    color: #0E94FB;
+    border-radius: 100px;
+    cursor: pointer;
+    
+}

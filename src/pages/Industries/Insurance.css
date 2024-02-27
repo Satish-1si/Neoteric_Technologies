@@ -1,0 +1,36 @@
+.Insurance-main{
+    width: 100%;
+    padding: 100px;
+    gap: 40px;
+    background-image: url("./Images/industry5.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+.Insurance-main-left{
+    width: 60%;
+}
+.Insurance-main-right{
+    width: 40%;
+}
+.Insurance-title{
+    font-size: 64px;
+}
+
+.Insurance-description{
+    font-size: 16px;
+}
+
+.Insurance-viewProjects{
+    padding: 10px 0px;
+    font-size: 20px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0060AA;
+    color: #0E94FB;
+    border-radius: 100px;
+    cursor: pointer;
+    
+}
