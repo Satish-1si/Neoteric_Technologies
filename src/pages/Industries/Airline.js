@@ -16,7 +16,7 @@ export default function Airline() {
           marriage of technology and aviation ensures safer, smoother, and more
           connected journeys, shaping the future of air travel.
         </div>
-        <div className="Airline-viewProjects">View Projects</div>
+        {/* <div className="Airline-viewProjects">View Projects</div> */}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 .Airline-main{
     width: 100%;
-    padding: 100px;
+    padding: 180px 100px;
     gap: 40px;
     background-image: url("./Images/industry6.svg");
     background-size: contain;
@@ -31,6 +31,97 @@
     border: 2px solid #0060AA;
     color: #0E94FB;
     border-radius: 100px;
-    cursor: pointer;
+    cursor: pointer;   
+}
+
+@media(max-width:1250px){
+
+    .Airline-main{
+        padding: 100px;
+    }
+
+    .Airline-title{
+        font-size: 35px;
+    }
+
+    .Airline-description{
+        font-size: 14px;
+    }
+}
+@media(max-width:900px){
     
+    .Airline-main{
+        padding: 70px;
+    }
+
+}
+
+@media(max-width:768px){
+    .Airline-main{
+        flex-direction: column;
+        background-image: none;
+        align-items: center;
+        padding: 0 50px;
+        padding-bottom: 0px;
+    }
+    .Airline-main-left{
+        background-image: url("./Images/Airline.svg");
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: calc(100% + 100px);
+    }
+    .Airline-main-right {
+        width: 90%;
+        position: relative;
+        bottom: 100px;
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .Airline-title{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+    .Airline-description{
+        text-align: center;
+    }
+}
+
+@media(max-width:600px){
+    .Airline-main{
+        padding: 0 40px;
+    }
+    .Airline-title{
+        font-size: 25px;
+    }
+    .Airline-description{
+        font-size: 12px;
+    }
+    .Airline-main-left{
+        width: calc(100% + 80px);
+    }
+}
+@media(max-width:430px){
+    .Airline-title{
+        font-size: 20px;
+    }
+    .Airline-main{
+        padding: 0 25px;
+    }
+    .Airline-main-left{
+        width: calc(100% + 50px);
+    }
+}
+@media(max-width:360px){
+    .Airline-title{
+        font-size: 15px;
+    }
+    .Airline-description{
+        font-size: 11px;
+    }
+
 }

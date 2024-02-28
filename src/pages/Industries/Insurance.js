@@ -16,7 +16,7 @@ export default function Insurance() {
           and technology propels the industry into a future defined by agility
           and customer-centricity.
         </div>
-        <div className="Insurance-viewProjects">View Projects</div>
+        {/* <div className="Insurance-viewProjects">View Projects</div> */}
       </div>
       <div className="Insurance-main-right"></div>
     </div>

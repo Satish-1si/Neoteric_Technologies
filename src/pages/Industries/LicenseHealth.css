@@ -1,7 +1,8 @@
 .LicenseHealth-main{
     width: 100%;
-    padding: 100px;
+    padding: 180px 100px;
     gap: 40px;
+    background-color: #F5F5F7;
     background-image: url("./Images/industry1.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -31,6 +32,97 @@
     border: 2px solid #0060AA;
     color: #0E94FB;
     border-radius: 100px;
-    cursor: pointer;
+    cursor: pointer;   
+}
+
+@media(max-width:1250px){
+
+    .LicenseHealth-main{
+        padding: 100px;
+    }
+
+    .LicenseHealth-title{
+        font-size: 35px;
+    }
+
+    .LicenseHealth-description{
+        font-size: 14px;
+    }
+}
+@media(max-width:900px){
     
+    .LicenseHealth-main{
+        padding: 70px;
+    }
+
+}
+
+@media(max-width:768px){
+    .LicenseHealth-main{
+        flex-direction: column-reverse;
+        background-image: none;
+        align-items: center;
+        padding: 0 50px;
+        padding-bottom: 0px;
+    }
+    .LicenseHealth-main-right{
+        background-image: url("./Images/Licenses\ &\ Health\ care.svg");
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: calc(100% + 100px);
+    }
+    .LicenseHealth-main-left {
+        width: 90%;
+        position: relative;
+        bottom: 100px;
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .LicenseHealth-title{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+    .LicenseHealth-description{
+        text-align: center;
+    }
+}
+
+@media(max-width:600px){
+    .LicenseHealth-main{
+        padding: 0 40px;
+    }
+    .LicenseHealth-title{
+        font-size: 25px;
+    }
+    .LicenseHealth-description{
+        font-size: 12px;
+    }
+    .LicenseHealth-main-right{
+        width: calc(100% + 80px);
+    }
+}
+@media(max-width:430px){
+    .LicenseHealth-title{
+        font-size: 20px;
+    }
+    .LicenseHealth-main{
+        padding: 0 25px;
+    }
+    .LicenseHealth-main-right{
+        width: calc(100% + 40px);
+    }
+}
+@media(max-width:360px){
+    .LicenseHealth-title{
+        font-size: 15px;
+    }
+    .LicenseHealth-description{
+        font-size: 11px;
+    }
+
 }

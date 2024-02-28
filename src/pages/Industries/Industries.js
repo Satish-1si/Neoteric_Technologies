@@ -6,6 +6,7 @@ import Education from "./Education";
 import Retails from "./Retails";
 import Insurance from "./Insurance";
 import Airline from "./Airline";
+import Contact from "./Contact";
 
 export default function Industries() {
   return (
@@ -17,6 +18,7 @@ export default function Industries() {
       <Education />
       <Insurance />
       <Airline/>
+      <Contact/>
     </div>
   );
 }

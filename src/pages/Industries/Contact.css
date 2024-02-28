@@ -1,0 +1,52 @@
+.Industries-ContactMain{
+    padding: 100px;
+    gap: 40px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-image: url("./Images/Bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Industries-ContactTitle{
+    font-size: 64px;
+    text-align: center;
+}
+.Industries-ContactDescription{
+    font-size: 16px;
+}
+.Industries-ContactButton{
+    padding: 10px 0px;
+    font-size: 20px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+@media(max-width:1120px){
+    .Industries-ContactTitle{
+        font-size: 39px;
+    }
+}
+
+@media(max-width:768px){
+    .Industries-ContactMain{
+        padding: 50px;
+    }
+    .Industries-ContactTitle{
+        font-size: 30px;
+    }
+    .Industries-ContactDescription{
+        font-size: 15px;
+        text-align: center;
+    }
+    .Industries-ContactButton{
+        padding: 7px 0px;
+        font-size: 16px;
+        width: 170px;
+    }
+}

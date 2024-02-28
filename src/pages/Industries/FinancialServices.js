@@ -16,7 +16,7 @@ export const FinancialServices = () => {
           industry, offering seamless transactions, personalized services, and
           unprecedented insights, heralding a new era of financial technology.
         </div>
-        <div className="FinancialServices-viewProjects">View Projects</div>
+        {/* <div className="FinancialServices-viewProjects">View Projects</div> */}
       </div>
     </div>
   );

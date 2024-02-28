@@ -5,7 +5,7 @@ import "./LicenseHealth.css";
 export default function LicenseHealth() {
   return (
     <div className="LicenseHealth-main d-flex">
-      <div className="LicenseHealth-main-left d-flex flex-column gap-4 ">
+      <div className="LicenseHealth-main-left d-flex flex-column gap-4">
         <div className="LicenseHealth-title">Licenses & Health care</div>
         <div className="LicenseHealth-description">
           In the dynamic realm of neoteric technologies, Licenses & Healthcare
@@ -16,7 +16,7 @@ export default function LicenseHealth() {
           impact of technology on healthcare, delivering a secure and pioneering
           landscape.
         </div>
-        <div className="LicenseHealth-viewProjects">View Projects</div>
+        {/* <div className="LicenseHealth-viewProjects">View Projects</div> */}
       </div>
       <div className="LicenseHealth-main-right"></div>
     </div>

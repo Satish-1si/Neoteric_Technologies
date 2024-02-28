@@ -1,6 +1,6 @@
 .FinancialServices-main{
     width: 100%;
-    padding: 100px;
+    padding: 180px 100px;
     gap: 40px;
     background-image: url("./Images/industry2.svg");
     background-size: contain;
@@ -32,5 +32,96 @@
     color: #0E94FB;
     border-radius: 100px;
     cursor: pointer;
+}
+
+@media(max-width:1250px){
+
+    .FinancialServices-main{
+        padding: 100px;
+    }
+
+    .FinancialServices-title{
+        font-size: 35px;
+    }
+
+    .FinancialServices-description{
+        font-size: 14px;
+    }
+}
+@media(max-width:900px){
     
+    .FinancialServices-main{
+        padding: 70px;
+    }
+
+}
+
+@media(max-width:768px){
+    .FinancialServices-main{
+        flex-direction: column;
+        background-image: none;
+        align-items: center;
+        padding: 0 50px;
+        padding-bottom: 0px;
+    }
+    .FinancialServices-main-left{
+        background-image: url("./Images/Financial\ services.svg");
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: calc(100% + 100px);
+    }
+    .FinancialServices-main-right {
+        width: 90%;
+        position: relative;
+        bottom: 100px;
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .FinancialServices-title{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+    .FinancialServices-description{
+        text-align: center;
+    }
+}
+
+@media(max-width:600px){
+    .FinancialServices-main{
+        padding: 0 40px;
+    }
+    .FinancialServices-title{
+        font-size: 25px;
+    }
+    .FinancialServices-description{
+        font-size: 12px;
+    }
+    .FinancialServices-main-left{
+        width: calc(100% + 80px);
+    }
+}
+@media(max-width:430px){
+    .FinancialServices-title{
+        font-size: 20px;
+    }
+    .FinancialServices-main{
+        padding: 0 25px;
+    }
+    .FinancialServices-main-left{
+        width: calc(100% + 50px);
+    }
+}
+@media(max-width:360px){
+    .FinancialServices-title{
+        font-size: 15px;
+    }
+    .FinancialServices-description{
+        font-size: 11px;
+    }
+
 }

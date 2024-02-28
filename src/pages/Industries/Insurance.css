@@ -1,6 +1,7 @@
 .Insurance-main{
     width: 100%;
-    padding: 100px;
+    padding: 180px 100px;
+    background-color: #F5F5F7;
     gap: 40px;
     background-image: url("./Images/industry5.svg");
     background-size: contain;
@@ -32,5 +33,96 @@
     color: #0E94FB;
     border-radius: 100px;
     cursor: pointer;
+}
+
+@media(max-width:1250px){
+
+    .Insurance-main{
+        padding: 100px;
+    }
+
+    .Insurance-title{
+        font-size: 35px;
+    }
+
+    .Insurance-description{
+        font-size: 14px;
+    }
+}
+@media(max-width:900px){
     
+    .Insurance-main{
+        padding: 70px;
+    }
+
+}
+
+@media(max-width:768px){
+    .Insurance-main{
+        flex-direction: column-reverse;
+        background-image: none;
+        align-items: center;
+        padding: 0 50px;
+        padding-bottom: 0px;
+    }
+    .Insurance-main-right{
+        background-image: url("./Images/Insurance.svg");
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: calc(100% + 100px);
+    }
+    .Insurance-main-left {
+        width: 90%;
+        position: relative;
+        bottom: 100px;
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .Insurance-title{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+    .Insurance-description{
+        text-align: center;
+    }
+}
+
+@media(max-width:600px){
+    .Insurance-main{
+        padding: 0 40px;
+    }
+    .Insurance-title{
+        font-size: 25px;
+    }
+    .Insurance-description{
+        font-size: 12px;
+    }
+    .Insurance-main-right{
+        width: calc(100% + 80px);
+    }
+}
+@media(max-width:430px){
+    .Insurance-title{
+        font-size: 20px;
+    }
+    .Insurance-main{
+        padding: 0 25px;
+    }
+    .Insurance-main-right{
+        width: calc(100% + 40px);
+    }
+}
+@media(max-width:360px){
+    .Insurance-title{
+        font-size: 15px;
+    }
+    .Insurance-description{
+        font-size: 11px;
+    }
+
 }

@@ -17,7 +17,7 @@ export default function Education() {
           into a tech-enabled future, fostering a dynamic and inclusive learning
           environment.
         </div>
-        <div className="Education-viewProjects">View Projects</div>
+        {/* <div className="Education-viewProjects">View Projects</div> */}
       </div>
     </div>
   );

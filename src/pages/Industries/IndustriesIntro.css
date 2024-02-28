@@ -9,3 +9,23 @@
     width: 70%;
     font-size: 16px;
 }
+
+@media(max-width:768px){
+    .Industries-main{
+        padding: 75px;
+    }
+    .Industries-title{
+        font-size: 70px;
+    }
+    .Industries-content{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .Industries-main{
+        padding: 25px 50px;
+    }
+    .Industries-title{
+        font-size: 60px;
+    }
+}

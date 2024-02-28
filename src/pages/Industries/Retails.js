@@ -16,7 +16,7 @@ export default function Retails() {
           creating adynamic and tech-savvy shopping ecosystem for the modern
           consumer.
         </div>
-        <div className="Retails-viewProjects">View Projects</div>
+        {/* <div className="Retails-viewProjects">View Projects</div> */}
       </div>
       <div className="Retails-main-right"></div>
     </div>
