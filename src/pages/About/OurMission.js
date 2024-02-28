@@ -1,18 +1,13 @@
 import React from "react";
 
-import responsive1 from "./Images/responsive1.svg";
-
 import "./OurMission.css";
 
 export default function OurMission() {
   return (
-    <div className="Ourmission-main">
-      <div className="Ourmission-right">
-        <div className="Ourmission-right-image"></div>
-      </div>
-      <div className="Ourmission-left">
-        <div className="Ourmission-heading">Our Mission</div>
-        <div className="Ourmission-description">
+    <div className="OurMission-main d-flex">
+      <div className="OurMission-main-left d-flex flex-column gap-4">
+        <div className="OurMission-title">Our Mission</div>
+        <div className="OurMission-description">
           At Neoteric Technologies, our mission is to empower businesses through
           innovative IT solutions that drive growth, efficiency, and success. We
           are committed to delivering cutting-edge technology services that
@@ -23,6 +18,7 @@ export default function OurMission() {
           solutions.
         </div>
       </div>
+      <div className="OurMission-main-right"></div>
     </div>
   );
 }

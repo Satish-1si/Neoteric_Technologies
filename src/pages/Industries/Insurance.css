@@ -67,6 +67,7 @@
     }
     .Insurance-main-right{
         background-image: url("./Images/Insurance.svg");
+        background-position: center;
         background-size: cover;
         border-radius: 0 0 20px 20px;
         background-repeat: no-repeat;

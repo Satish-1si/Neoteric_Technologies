@@ -4,9 +4,9 @@ import "./AboutIntro.css";
 
 export default function AboutIntro() {
   return (
-    <div className="AboutIntro-main">
-      <div className="AboutIntro-heading">About</div>
-      <div className="AboutIntro-description">
+    <div className="About-main d-flex flex-column gap-3">
+      <div className="About-title">About</div>
+      <div className="About-content">
         Unlock the potential of your business by viewing it through a digital
         perspective. Drawing on our roots in software engineering and blending
         strategic business consulting, innovative design thinking, and a

@@ -66,6 +66,7 @@
     }
     .Education-main-left{
         background-image: url("./Images/Education.svg");
+        background-position: center;
         background-size: cover;
         border-radius: 0 0 20px 20px;
         background-repeat: no-repeat;

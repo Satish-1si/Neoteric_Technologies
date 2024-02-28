@@ -4,10 +4,10 @@ import "./OurVision.css";
 
 export default function OurVision() {
   return (
-    <div className="OurVision-main">
-      <div className="OurVision-left"></div>
-      <div className="OurVision-right">
-        <div className="OurVision-heading">Our Vision</div>
+    <div className="OurVision-main d-flex">
+      <div className="OurVision-main-left"></div>
+      <div className="OurVision-main-right d-flex flex-column gap-4 ">
+        <div className="OurVision-title">Our Vision</div>
         <div className="OurVision-description">
           Our vision at Neoteric Technologies is to be a global leader in
           providing comprehensive IT services that empower organizations to
