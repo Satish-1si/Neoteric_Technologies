@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.serviceGradientSection{
+    background-image: url("./servicesImages//GradientBg.svg");
+    padding: 170px 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceSubSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gradientHeading{
+font-family: Inter;
+font-size: 60px;
+font-weight: 300;
+line-height: 77px;
+letter-spacing: 0em;
+text-align: left;
+color:white;
+
+}
+.gradientParagraph{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color:white;
+    letter-spacing: 0.3px;
+}
+
+@media(max-width:1100px){
+    .serviceGradientSection{
+        padding: 80px;
+    }
+    .gradientHeading{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:768px){
+    .serviceGradientSection{
+        padding: 60px;
+    }
+    .gradientHeading{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .gradientParagraph{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:470px){
+    .serviceGradientSection{
+        padding: 40px;
+    }
+    .gradientHeading{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .gradientParagraph{
+        font-size: 13px;
+        line-height: 20px;
+        margin: 0px;
+    }
+}
+
+@media(max-width:380px){
+    .serviceGradientSection{
+        padding: 20px;
+    }
+    .gradientHeading{
+        font-size: 20px;
+        margin: 0;
+    }
+}

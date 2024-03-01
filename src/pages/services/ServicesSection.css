@@ -1,0 +1,69 @@
+.Service-sectionContainer{
+    width:100%;
+    background-image: url("./servicesImages/sectionBg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:200px 100px;
+    
+}
+.serviceInfoSection{
+    width:504px;
+    height:182px;
+    top: 201.5px;
+    left: 100px;
+    gap: 24px;
+    
+}
+.serviceTitle{
+font-family: Inter;
+color: black;
+font-size: 96px;
+font-weight: bold;
+line-height: 116px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.serviceDescription{
+    color:  #0E94FB ;
+
+}
+
+
+/* Media Queries */
+
+@media(max-width:1200px){
+    .Service-sectionContainer{
+        padding: 100px;
+        background-position: bottom;
+    }
+}
+@media(max-width:768px){
+    .Service-sectionContainer{
+        padding: 75px;
+    }
+    .serviceTitle{
+        font-size: 80px;
+    }
+}
+@media(max-width:550px){
+    .Service-sectionContainer{
+        padding: 50px;
+    }
+    .serviceTitle{
+        font-size: 60px;
+    }
+}
+
+@media(max-width:400px){
+    .Service-sectionContainer{
+        padding: 20px;
+        background-position: center;
+    }
+    .serviceTitle{
+        font-size: 50px;
+    }
+}
