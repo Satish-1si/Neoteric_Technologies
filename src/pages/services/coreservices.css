@@ -38,6 +38,7 @@
 }
 .servicesLinks {
    width: 100%;
+   min-height: 45vh;
    display: flex;
    gap: 20px;
 
@@ -70,10 +71,7 @@
 
 }
 
-.LinksData {
-   min-height: 242px;
 
-}
 
 .LinksData p {
    margin-bottom: 40px;
@@ -92,4 +90,87 @@
    border-radius: 100px;
    color: #0E94FB;
 
+}
+
+@media(max-width:1000px){
+
+   .CoreSubContainer{
+      padding: 65px;
+   }
+   .LinksSection li{
+      font-size: 20px;
+   }
+   .LinksData button{
+      padding: 20px 35px;
+   }
+}
+
+@media(max-width:768px){
+
+   .CoreHeading{
+      font-size: 50px;
+   }
+
+   .LinksSection{
+      flex-direction: row;
+      justify-content: flex-start;
+      overflow-x: scroll;
+      border-radius: 16px;
+      padding: 5px 12px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+   .servicesLinks{
+      flex-direction: column;
+   }
+
+   .LinksData{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .LinksData p{
+      padding: 0 20px;
+   }
+
+}
+
+@media(max-width:550px){
+
+   .CoreSubContainer{
+      padding: 30px;
+      gap: 0px;
+   }
+   .CoreHeading{
+      font-size: 35px;
+   }
+   .LinksData p{
+      padding: 0 15px;
+      font-size: 16px;
+   }
+   .LinksSection li{
+      font-size: 18px;
+   }
+   .LinksData button{
+      font-size: 16px;
+   }
+}
+
+@media(max-width:400px){
+   .CoreHeading {
+      font-size: 28px;
+   }
+   .CoreSubContainer{
+      padding: 10px;
+   }
+   .LinksData p{
+      font-size: 13px;
+   }
+   
+   .LinksSection li {
+      font-size: 16px;
+   }
+   .LinksData button {
+      padding: 8px 30px;
+   }
 }

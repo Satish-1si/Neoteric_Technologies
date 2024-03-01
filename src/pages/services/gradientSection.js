@@ -5,7 +5,7 @@ const GradientSection = () => {
   return (
      <div className="serviceGradientSection">
         <div className="serviceSubSection">
-          <h1 className="gradientHeading">
+          <h1 className="Service-gradientHeading">
           “Thrive through Challenges, Lead with Enterprise Resilience.”
           </h1>
           <p className="gradientParagraph">
