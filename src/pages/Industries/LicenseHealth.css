@@ -91,13 +91,16 @@
         border-radius: 20px;
         padding: 20px;
     }
+    #IndustriesDark .LicenseHealth-main-left{
+        background-color: #2e2e33;
+    }
     .LicenseHealth-title{
         display: flex;
         justify-content: center;
         font-size: 40px;
     }
     .LicenseHealth-description{
-        text-align: center;
+        text-align: start;
     }
 }
 
@@ -123,7 +126,7 @@
         padding: 0 25px;
     }
     .LicenseHealth-main-right{
-        width: calc(100% + 40px);
+        width: calc(100% + 50px);
     }
 }
 @media(max-width:360px){

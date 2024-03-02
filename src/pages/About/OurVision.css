@@ -7,6 +7,22 @@
     background-repeat: no-repeat;
     background-position: left;  
 }
+
+/* Darkmode css */
+
+#aboutDark .OurVision-main{
+    background-color: #1D1D1F;
+} 
+
+#aboutDark .OurVision-title{
+    color: white;
+}
+
+#aboutDark .OurVision-description{
+    color: #E8E8E8;
+}
+
+
 .OurVision-main-left{
     width: 40%;
 }
@@ -51,7 +67,7 @@
 @media(max-width:900px){
     
     .OurVision-main{
-        padding: 50px;
+        padding: 30px;
     }
     .OurVision-main-left{
         width: 50%;
@@ -88,13 +104,16 @@
         border-radius: 20px;
         padding: 20px;
     }
+    #aboutDark .OurVision-main-right{
+        background-color: #2e2e33;
+    }
     .OurVision-title{
         display: flex;
         justify-content: center;
         font-size: 40px;
     }
     .OurVision-description{
-        text-align: center;
+        text-align: start;
     }
 }
 

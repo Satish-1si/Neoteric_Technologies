@@ -5,13 +5,40 @@
     background-repeat: no-repeat;
     background-position: right;  
 }
+
+/* Dark mode */
+
+#aboutDark .About-main{
+    background-color: #1D1D1F;
+} 
+
+#aboutDark .About-title{
+    color: white;
+}
+
+#aboutDark .About-content{
+    color: #E8E8E8;
+}
+
+
 .About-title{
     font-size: 96px;
     font-weight: 600;
 }
+
+
 .About-content{
     width: 70%;
     font-size: 16px;
+}
+
+@media(max-width:900px){
+    .About-main{
+        padding: 40px;
+    }
+    .About-title{
+        font-size: 75px;
+    }
 }
 
 @media(max-width:768px){

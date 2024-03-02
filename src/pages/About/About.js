@@ -5,12 +5,12 @@ import OurVision from "./OurVision";
 
 import "./About.css";
 
-export default function About() {
+export default function About({Mode}) {
   return (
-    <>
+    <div id={Mode ? "aboutDark" : "aboutLight"}>
       <AboutIntro />
       <OurMission />
       <OurVision />
-    </>
+    </div>
   );
 }
