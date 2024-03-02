@@ -1,52 +1,61 @@
 import React from 'react'
 import "./section_4.css"
 import { v4 } from 'uuid'
+import strategies from "../Home/Images/strategies.svg"
+import engineering from "../Home/Images/engineering.svg"
+import server from "../Home/Images/server.svg"
+import dashboard from "../Home/Images/dashboard.svg"
+import microchip from "../Home/Images/microchip.svg"
+import cyber from "../Home/Images/cyber_security.svg"
+
 const Imformation=[
     {
-      logo:require("./Images/strategies.png")  ,
+      logo:strategies ,
       Heading:"Strategy",
       text:"Crafting strategies tailored to your unique goals and challenges, we pave the path for your success through insightful planning and execution."
     },
     {
-      logo:require("./Images/engineering.png")  ,
+      logo:engineering  ,
       Heading:"Engineering",
       text:"Crafting strategies tailored to your unique goals and challenges, we pave the path for your success through insightful planning and execution."
     },
     {
-      logo:require("./Images/server.png")  ,
+      logo:server  ,
       Heading:"Cloud",
       text:"Crafting strategies tailored to your unique goals and challenges, we pave the path for your success through insightful planning and execution."
     },
     {
-      logo:require("./Images/Group.png")  ,
+      logo:dashboard  ,
       Heading:"Data & Analytics",
       text:"Crafting strategies tailored to your unique goals and challenges, we pave the path for your success through insightful planning and execution."
     },
     {
-      logo:require("./Images/microchip.png")  ,
+      logo:microchip,
       Heading:"Artificial Intelligence",
       text:"Crafting strategies tailored to your unique goals and challenges, we pave the path for your success through insightful planning and execution."
     },
     {
-      logo:require("./Images/cyber-security.png")  ,
+      logo:cyber  ,
       Heading:"Cyber Security",
       text:"Crafting strategies tailored to your unique goals and challenges, we pave the path for your success through insightful planning and execution."
     },
    
     
 ]
-export const Technologies = () => {
+export const Technologies = ({Mode}) => {
   return (
-    <div className='Technologies_container'>
+    <div className='Technologies_container'
+    style={Mode?{backgroundColor:"black",color:"white"}:{backgroundColor:"white",color:"black"}}
+    >
         <div className='Technologies_section'>
                 <h1 className="Techno_heading">Our Core Services</h1>
                 <div className='Techono_cards_container'>
                 {
                   Imformation.map(({logo,Heading,text})=>{
-                    return <div className='Techno_Card' key={v4()}>
+                    return <div className='Techno_Card col-lg-3 col-md-4 col-sm-6 col-10' key={v4()}>
                                  <img src={logo} />
-                                 <h2>{Heading}</h2>
-                                 <p>{text}</p>
+                                 <p className='Section4CardHeading'>{Heading}</p>
+                                 <p className='Section4CardText'>{text}</p>
                              </div>
                   })
                 }

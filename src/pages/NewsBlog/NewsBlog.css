@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row{
+   padding-left: 35px;
+   text-align: center;
+    margin-top: 40px;
+ background: #FFFFFF;
+}
+.container{
+    width: 100%;
+    background-image: none;
+}
+.news-sub-image{
+    width: 100%;
+}
+.news-image{
+    width: 45%;
+}
+.news{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.news-para{
+    font-weight: 600;
+}
+.news-contenthead{
+    width: 100%;
+}
+.opinion-para{
+    font-weight: 600;
+}
+.opinion-pieces-head{
+    width: 100%;
+}
+.opinion-sub-image{
+    width: 100%;
+}
+.opinion-image{
+    width: 45%;
+}
+.opinion{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.stay{
+    width: 100%;
+    background: linear-gradient(222.06deg, #0060AA 1.65%, #0E94FB 107.33%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+.stay-connected-card-1{
+    width: 60%;
+    color: white;
+    margin-left: 40px;
+    padding-top: 0px;
+}
+.stay-connected-card-2{
+    width: 40%;
+    padding: 30px;
+    margin-top: -50px;
+}
+.News-blogs .form-control{
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 30px;
+    border:1px solid #FFFFFF;
+    box-shadow: none;
+    background-color: #0060AA;
+    color: #FFFFFF !important   ;
+}
+.emial-header{
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.stay-connected-desc{
+    font-size: 14px;
+}
+.button{
+    width: 140px;
+    height: 40px;
+    border-radius: 50px;
+    border:1px solid #FFFFFF;
+    box-shadow: none;
+    background: linear-gradient(222.06deg, #0060AA 1.65%, #0E94FB 107.33%);
+    color: #FFFFFF;
+}
+::placeholder{
+    color: #FFFFFF !important;
+    font-size: 14px;
+}
+.button-div{
+    margin-left: 62px;
+    
+}

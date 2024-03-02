@@ -1,3 +1,8 @@
+#IndustriesDark{
+    background-color: #1D1D1F;
+    color: white;
+}
+
 .Industries-main{
     padding: 100px;
 }
@@ -8,6 +13,10 @@
 .Industries-content{
     width: 70%;
     font-size: 16px;
+}
+
+#IndustriesDark .Industries-content{
+    color: #E8E8E8;
 }
 
 @media(max-width:768px){

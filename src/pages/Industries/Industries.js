@@ -8,9 +8,9 @@ import Insurance from "./Insurance";
 import Airline from "./Airline";
 import Contact from "./Contact";
 
-export default function Industries() {
+export default function Industries({Mode}) {
   return (
-    <div>
+    <div id={Mode ? "IndustriesDark" : "IndustriesLight" }>
       <IndustriesIntro />
       <LicenseHealth />
       <FinancialServices />

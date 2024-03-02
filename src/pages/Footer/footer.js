@@ -4,15 +4,19 @@ import { SocialLinks } from './socialLinks'
 import {LogoImf} from './LogoImf.js'
 import "./footer.css"
 
-export const Footer = () => {
+export const Footer = ({Mode}) => {
   return (
-    <div className='FooterContainer'>
-       <div className='FooterContainerSection'>
-        <LogoImf/>
-        <SocialLinks/>
-        <ServiceLinks/>
+    <div className='FooterContainer'
+    style={Mode?{backgroundColor:"black"}:{backgroundColor:"white"}}
+    >
+       <div className='FooterContainerSection col-12 d-flex'>
+        <LogoImf  Mode={Mode}/>
+        <SocialLinks Mode={Mode}/>
+        <ServiceLinks Mode={Mode}/>
+
 
        </div>
+    
         
     </div>
   )

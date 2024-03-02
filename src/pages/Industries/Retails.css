@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
     background-position: right;  
 }
+#IndustriesDark .Retails-main{
+    background-color:#2e2e33;
+}
+
 .Retails-main-left{
     width: 60%;
 }
@@ -20,6 +24,10 @@
 
 .Retails-description{
     font-size: 16px;
+}
+
+#IndustriesDark .Retails-description{
+    color: #E8E8E8;
 }
 
 .Retails-viewProjects{

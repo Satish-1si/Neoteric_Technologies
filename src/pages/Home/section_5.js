@@ -3,7 +3,7 @@ import "./section_5.css";
 const Contact_description = () => {
 	return (
 		
-			<div className="contacts_sub_section">
+			<div className="contacts_sub_section col-lg-6 col-md-4 col-sm-12 col-12">
 				<h1 className="contacts_sub_sec_Heading">
 					Let’s Talk
 				</h1>
@@ -23,7 +23,7 @@ const Contact_description = () => {
 	);
 };
 const Contact_Details=()=>{
-    return <div className="Contact_Details_sec_section">
+    return <div className="Contact_Details_sec_section col-lg-4 col-md-6 col-sm-12 col-12 pt-3">
            <div className="Contact_Details_child">
                 <img src={require("./Images/mail.png")} alt="" className="src" />
                 <a href="mailto:neoterictechnologiesinc.com">Drop us a mail at: neoterictechnologiesinc.com</a>
@@ -42,9 +42,11 @@ const Contact_Details=()=>{
           
      </div>
 }
-export const Contacts_Section = () => {
+export const Contacts_Section = ({Mode}) => {
 	return (
-		<div className="Contacts_container" style={{backgroundImage: `url(${require("./Images/GradientColorFrame.png")})`,}}>
+		<div className="Contacts_container"
+          style={Mode?{backgroundColor:"black",color:"white"}:{backgroundColor:"white",color:"black"}}
+          >
        <div className="contacts_section">
        <Contact_description/>
        <Contact_Details/>

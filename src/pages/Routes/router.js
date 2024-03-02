@@ -1,20 +1,22 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import About from '../About/About.js'
+import Careers from '../Careers/Careers.jsx'
+import ContactUs from '../ContactUs/ContactUs.jsx'
 import Industries from '../Industries/Industries.js'
+import NewsBlog from '../NewsBlog/NewsBlog.jsx'
 import Services from '../services/services.js'
-
-const HomeComponent=React.lazy(()=>import("../Home/Home.js"))
-export const Routers = () => {
+import Home from "../Home/Home.js"
+export const Routers = ({Mode}) => {
   return (
     <Routes>
-      <Route path="/" element={<React.Suspense fallback={<h6 style={{textAlign:"center"}}>loading...</h6>}>{<HomeComponent/>}</React.Suspense>}> </Route>
-      <Route path="services" element={<Services/>}> </Route>
-      <Route path="industries" element={<Industries/>}> </Route>
-      <Route path="careers" element={<h1>careers</h1>}> </Route>
-      <Route path="about" element={<About/>}> </Route>
-      <Route path="contact" element={<h1>contact</h1>}> </Route>
-      <Route path="News_Blog" element={<h1>News_Blog</h1>}> </Route>
+      <Route path="/" element={<Home Mode={Mode}/> }> </Route>
+      <Route path="services" element={<Services Mode={Mode}/>}> </Route>
+      <Route path="industries" element={<Industries Mode={Mode}/>}> </Route>
+      <Route path="careers" element={<Careers Mode={Mode}/>}> </Route>
+      <Route path="about" element={<About Mode={Mode}/>}> </Route>
+      <Route path="contact" element={<ContactUs Mode={Mode}/>}> </Route>
+      <Route path="News_Blog" element={<NewsBlog Mode={Mode}/>}> </Route>
     </Routes>
 
   )

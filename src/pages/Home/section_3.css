@@ -2,25 +2,92 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color:whitesmoke;
-
+	background-color:#F5F5F7; 
 }
 .Tech_section {
-	width: 80%;
-	height: 650px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5%;
+}
+.Tech_Heading{
+	font-size: 36px;
+	font-weight: 700;
+	height: 35px;
+	color: #0E94FB;
+	margin-top: 0%;
+	margin-bottom: 3%;
+}
+.InnovationText{
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+color:#6E6E73;
+padding-bottom: 3%;
+}
+
+@media(max-width:575px) {
+	.Tech_Heading{
+		font-size: 28px;
+		font-weight: 700;
+		height: 48px;
+		color: #0E94FB;
+		margin-top: 0%;
+		margin-bottom: 0%;
+		padding: 25px;	}
+		.Tech_section p{
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			letter-spacing: 0px;
+			text-align: left;
+			padding: 25px;
+		}
+	
+}
+@media(max-width:321px) {
+	.Tech_Heading{
+		font-size: 25px;
+		font-weight: 700;
+		height: 48px;
+		color: #0E94FB;
+		margin-top: 0%;
+		margin-bottom: 0%;
+		padding: 25px;	}
+		.Tech_section p{
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			letter-spacing: 0px;
+			text-align: left;
+			padding: 25px;
+		}
+	
+}
+
+.TechText{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #6E6E73;
 }
 
 .service_imformation_box {
 	background-color: white;
-	box-shadow: -2px 2px 15px rgb(248, 248, 248);
+	box-shadow: 1px 1px 1px 2px  #c8c7c7;
+	height: 315px;
+	width: 300px;
+	border-radius: 10px;
+	padding: 15px;
 }
 
 .TechServices {
-	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-columns: repeat(3, 270px);
+	display: flex;
+	flex-wrap: wrap;
 	gap: 50px;
 	align-items: center;
+	justify-content: center;
 }
 .TechServices h4 {
 	text-align: center;
@@ -36,4 +103,10 @@
 	font-weight: bold;
 	font-size: 25px;
 	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.CardImage{
+	width: 25%;
+    height: 25%;
+    margin-left: 37%;
+    margin-top: -21%;
 }

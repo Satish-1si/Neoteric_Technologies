@@ -1,10 +1,9 @@
-
 import React from "react";
-import "./Home.css"
-import RightIcon from "./Images/arrow-circle-Right.png"
-import LeftIcon from "./Images/arrow-circle-left.png"
+import "./Home.css";
+import RightIcon from "./Images/arrow-circle-Right.png";
+import LeftIcon from "./Images/arrow-circle-left.png";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { PromoContent } from "./Section_1";
 import { SolutionBanner } from "./section_2";
 import { TechnologySolutions } from "./section_3";
@@ -13,71 +12,80 @@ import { Contacts_Section } from "./section_5";
 import { Clients } from "./section_6";
 import { News_Blogs } from "./section_7";
 
-const Images=[
-    {
-        Img_path:require("./Images/Component16.png")
-        ,paragraph:"Unlocking Potential, Unleashing Innovation"
-        
-    },
-    {
-        Img_path:require("./Images/Component17.png")
-        ,paragraph:"AI-Powered Solutions for a Smarter Tomorrow"
-    },
-    {
-        Img_path:require("./Images/Component18.png")
-        ,paragraph:"Empowering Businesses, Empowering You"
-      
-    },
+const Images = [
+  {
+    Img_path: require("./Images/Component18.png"),
+    paragraph: `Unlocking Potential, Unleashing <span class="bold-word">Innovation</span>`,
+    boldWord: "Innovation"
+  },
+  {
+    Img_path: require("./Images/Component17.png"),
+    paragraph: `AI-Powered Solutions for a <span class="bold-word">Smarter</span> Tomorrow`,
+    boldWord: "Smarter"
+  },
+  {
+    Img_path: require("./Images/Component16.png"),
+    paragraph: `Empowering <span class="bold-word">Businesses</span>, Empowering You`,
+    boldWord: "Businesses"
+  },
+];
 
-]
+const HeroSection = () => {
+  const [currentImage, setCurrentImage] = useState(0);
 
-const HeroSection=()=> {
-  const [Image_count,setImage_count]=useState({count:0})
-  const IncreaseTheImageCount=()=>{
-      if(Image_count.count<Images.length-1){
-        setImage_count(({count})=>({count:count+1}))
-      } 
-   }
-   const DecrementTheImageCount=()=>{
-    if(Image_count.count>0){
-        setImage_count(({count})=>({count:count-1}))
-      }
-   }
-  const Image_access=Image_count.count
+  const handleNextImage = () => {
+    setCurrentImage((prevIndex) =>
+      prevIndex === Images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrevImage = () => {
+    setCurrentImage((prevIndex) =>
+      prevIndex === 0 ? Images.length - 1 : prevIndex - 1
+    );
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      handleNextImage();
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [currentImage, Images.length]);
+
   return (
-     <section 
-     className="section_container"
-     style={{backgroundImage:`url(${Images[Image_access].Img_path})`}}
-     >
-    <div className="TextContainer">
-         <h1>
-            {Images[Image_access].paragraph}
-         </h1>
-        <div className="icons_container">
-           <img src={LeftIcon} onClick={DecrementTheImageCount}/>
-           <img src={RightIcon} onClick={IncreaseTheImageCount}/>
-           <div className="pageNo">
-              { <h6>01 / {Image_count.count+1}</h6>}
-           </div>
+    <section
+      className="section_container col-lg-12 col-md-12 col-sm-12 col-12"
+    >
+      <div className="carousel-img" style={{ backgroundImage: `url(${Images[currentImage].Img_path})` }}>
+        <div className="TextContainer">
+          <p dangerouslySetInnerHTML={{ __html: Images[currentImage].paragraph }} />
+          <div className="icons_container">
+            <img src={LeftIcon} onClick={handlePrevImage} />
+            <img src={RightIcon} onClick={handleNextImage} />
+            <div className="pageNo">
+              <p>{`0${currentImage + 1} / 0${Images.length}`}</p>
+            </div>
+          </div>
         </div>
-     </div>
-     </section>
+      </div>
+    </section>
   );
-}
+};
 
-const HomeSection=()=>{
-      return(
-           <div>
-              <HeroSection/>
-              <PromoContent/>
-              <SolutionBanner/>
-              <TechnologySolutions/>
-              <Technologies/>
-              <Contacts_Section/>
-              <Clients/>
-              <News_Blogs/>
-              
-           </div>
-      )
-}
-export default HomeSection
+
+const HomeSection = ({Mode}) => {
+  return (
+    <div >
+    <HeroSection />
+      <PromoContent Mode={Mode}/>
+      <SolutionBanner  Mode={Mode} />
+      <TechnologySolutions  Mode={Mode} />
+      <Technologies  Mode={Mode}/>
+      <Contacts_Section  Mode={Mode}/>
+      {/* <Clients /> */}
+      <News_Blogs  Mode={Mode}/>
+    </div>
+  );
+};
+export default HomeSection;

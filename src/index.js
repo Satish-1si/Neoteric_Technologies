@@ -7,16 +7,16 @@ import { Routers } from "./pages/Routes/router";
 import { BrowserRouter, Routes } from "react-router-dom";
 import { Footer } from "./pages/Footer/footer.js";
 import { RecoilRoot } from "recoil";
+import { App } from "./App.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
- <div>
-		<BrowserRouter>
-		<Navbar />
-		      <Routers />
-		<Footer/>
-	</BrowserRouter>
- </div>
-);
+const FinalRender = () => {
+  return (
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
+  );
+};
+root.render(<FinalRender />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

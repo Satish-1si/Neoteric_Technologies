@@ -8,6 +8,12 @@
     background-repeat: no-repeat;
     background-position: right;  
 }
+
+#IndustriesDark .Insurance-main{
+    background-color: #2E2E33;
+}
+
+
 .Insurance-main-left{
     width: 60%;
 }
@@ -20,6 +26,10 @@
 
 .Insurance-description{
     font-size: 16px;
+}
+
+#IndustriesDark .Insurance-description{
+    color: #E8E8E8;
 }
 
 .Insurance-viewProjects{

@@ -8,7 +8,10 @@
 
 }
 
-
+#servicesDark .CoreSubContainer{
+   background-color: #1D1D1F;
+   color: white;
+}
 
 .CoreHeading {
    font-size: 64px;
@@ -18,10 +21,10 @@
    text-align: left;
 }
 
-/* .Service-arrowImage{
-   height: 15px;
-   width: 15px;
-} */
+
+#servicesDark .LinksSection li{
+   color: white;
+}
 
 .Link-individual{
    display: flex;

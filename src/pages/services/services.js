@@ -4,7 +4,7 @@ import GradientSection from "./gradientSection";
 
 const Services = ({ Mode }) => {
   return (
-    <div>
+    <div id={Mode ? "servicesDark" : "servicesLight"}>
       <ServicesSection />
       <GradientSection />
       <CoreServices />

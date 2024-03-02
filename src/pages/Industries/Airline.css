@@ -21,6 +21,10 @@
     font-size: 16px;
 }
 
+#IndustriesDark .Airline-description{
+    color: #E8E8E8;
+}
+
 .Airline-viewProjects{
     padding: 10px 0px;
     font-size: 20px;

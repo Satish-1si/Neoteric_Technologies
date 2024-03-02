@@ -21,6 +21,10 @@
     font-size: 16px;
 }
 
+#IndustriesDark .FinancialServices-description{
+    color: #E8E8E8;
+}
+
 .FinancialServices-viewProjects{
     padding: 10px 0px;
     font-size: 20px;

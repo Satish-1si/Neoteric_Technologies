@@ -63,11 +63,15 @@ body{
 
   
   .nav {
-    height: 50px;
+    height: 80px;
     width: 100%;
     background-color: #ffffff;
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cacaca;
   }
   
   .nav > .nav-header {
@@ -75,25 +79,25 @@ body{
   }
   
   .nav > .nav-header > .nav-title {
-    display: inline-block;
+    display: flex;
     font-size: 22px;
     color: #fff;
     font-weight: 550;
     padding: 10px 10px 10px 10px;
+    justify-content: center;
   }
+ 
   
   .nav > .nav-btn {
     display: none;
   }
-  
   .nav > .nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
+    display: flex;
+    justify-content: center;
   }
   .nav > .nav-links > ul li a {
     display: block;
-    padding: 0 8px;
+    padding: 0 10px;
     color: #000000;
     line-height: 40px;
     font-size: 18px;
@@ -101,7 +105,7 @@ body{
   }
   .nav > .nav-links > ul {
     padding: 0;
-    margin-top: 5px;
+    margin-top: 15px;
     list-style: none;
     position: relative;
   }
@@ -132,7 +136,7 @@ body{
     margin-left: 5px;
   }
   
-  @media (max-width: 760px) {
+  @media (max-width: 768px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -144,26 +148,23 @@ body{
       width: 50px;
       height: 50px;
       padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,
-    .nav #nav-check:checked ~ .nav-btn > label {
-      background-color: #0000004d;
+      margin-top: 12px;
     }
     .nav > .nav-btn > label > span {
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 3px solid #5dc3f3;
     }
     .nav > .nav-links {
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #ffffff;
+      background-color: #c1ddef;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
-      top: 50px;
+      top: 70px;
       left: 0px;
     }
     .nav > .nav-links > ul li a {
@@ -175,11 +176,11 @@ body{
   
     .nav > .nav-links > ul li {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
       padding: 0;
     }
     .nav > .nav-links > ul li a {
-      margin-left: 40%;
+      margin-left: 35%;
     }
     .nav .nav-links ul a.icon {
       margin-left: 33%;
@@ -192,5 +193,5 @@ body{
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+    
   }
-  

@@ -1,13 +1,18 @@
 .Service-sectionContainer{
     width:100%;
-    background-image: url("./servicesImages/sectionBg.svg");
+    background-image: url("./servicesImages/servicesdarkbg.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding:200px 100px;
     
+}
+
+#servicesDark .Service-sectionContainer{
+    background-color: #1D1D1F;
 }
 
 .serviceTitle{
@@ -18,8 +23,11 @@ font-weight: bold;
 line-height: 116px;
 letter-spacing: 0em;
 text-align: left;
-
 }
+#servicesDark .serviceTitle{
+    color: white;
+}
+
 .serviceDescription{
     color:  #0E94FB ;
 
@@ -31,7 +39,7 @@ text-align: left;
 @media(max-width:1200px){
     .Service-sectionContainer{
         padding: 100px;
-        background-position: bottom;
+        background-position: right;
     }
 }
 @media(max-width:768px){

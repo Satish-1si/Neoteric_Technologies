@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
 import "./coreservices.css";
-import { v4 } from "uuid";
 import { useState } from "react";
 import arrowImg from "./servicesImages/arrowIcon.svg";
 import arrowActive from "./servicesImages/arrowActive.svg";
+import arrowDark from "./servicesImages/service-arrow.svg";
+
 
 const Links = [
   { path: "Strategy", tittle: "Strategy" },
@@ -24,7 +24,7 @@ const Data = [
   "AI, a technological marvel, mimics human intelligence. It learns, adapts, and autonomously solves problems. From virtual assistants to advanced algorithms, AI transforms industries, enhancing efficiency and innovation. With the ability to analyze vast datasets, it fuels insights, revolutionizing how we work and engage in a rapidly evolving, intelligent world.",
   "Cybersecurity, a digital shield, safeguards systems and data from cyber threats. Utilizing advanced technologies like encryption and firewalls, it shields against hackers and malicious activities. In an era of increasing cyber risks, robust cybersecurity practices are crucial, ensuring the integrity, confidentiality, and availability of information in our interconnected digital landscape.",
 ];
-const CoreServices = () => {
+const CoreServices = ({Mode}) => {
   const [activeLinkIndex, setActiveLinkIndex] = useState(0); // Track active link index
 
   const handleLinkClick = (index) => {
@@ -51,7 +51,7 @@ const CoreServices = () => {
               {index === activeLinkIndex ? (
                 <img className="Service-arrowImage" src={arrowActive} />
               ) : (
-                <img className="Service-arrowImage" src={arrowImg} />
+                <img className="Service-arrowImage" src={Mode ? arrowDark : arrowImg} />
               )}
             </div>
           ))}
@@ -59,7 +59,7 @@ const CoreServices = () => {
         <div className="LinksInformation">
           <div className="LinksData">
             <p>{Data[activeLinkIndex]}</p>
-            <button>Learn More</button>
+            {/* <button>Learn More</button> */}
           </div>
         </div>
       </div>

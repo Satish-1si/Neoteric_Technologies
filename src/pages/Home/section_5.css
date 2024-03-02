@@ -1,24 +1,21 @@
 .Contacts_container {
-	width: 100vw;
-	height: 488px;
-	padding: 105px;
+	background-image: url(Images/Lets_talk.svg);
+	background-position: center;
+	position: relative;
+    background-size: cover;
+	padding: 6%;
 	gap: 24px;
 }
 .contacts_section {
-	width: 80.1vw;
     display: flex;
-    justify-content: space-between;
+	flex-wrap: wrap;    
     align-items: center;
+	justify-content: space-between;
 }
 .contacts_sub_section {
-	width: 650px;
-	height: 277px;
-	display: flex;
-	flex-direction: column;
 	justify-content: space-evenly;
 }
 .contacts_sub_sec_Heading {
-	font-family: Inter;
 	font-size: 54px;
 	font-weight: 400;
 	line-height: 72px;
@@ -27,7 +24,6 @@
 	color: white;
 }
 .contacts_sub_sec_paragraph {
-	font-family: Inter;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
@@ -36,7 +32,6 @@
 	color: white;
 }
 .contacts_sub_sec_button {
-	font-family: Inter;
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 24px;
@@ -51,14 +46,28 @@
 	gap: 24px;
 	border: solid white;
 }
+@media(min-width: 595px) {
+	.contacts_sub_sec_button {
+		font-family: Inter;
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: 0em;
+		text-align: center;
+		color: white;
+		background: linear-gradient(222.06deg, #0060aa 1.65%, #0f85df 107.33%);
+		width: 170px;
+		height: 60px;
+		padding: 18px;
+		border-radius: 100px;
+		gap: 24px;
+		border: solid white;
+	}
+}
 .Contact_Details_sec_section {
-	width: 350px;
-	height: 277px;
     padding: 5px;
     margin: 2px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+	margin-top: 20px;
 }
 
 .Contact_Details_child a{

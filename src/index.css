@@ -6,7 +6,20 @@
 }
 
 
-:root{
-    --background-Dark:black;
-    --background-white:white;
+:root {
+    --background-color: #fff; /* Light mode background */
+    --text-color: #000; /* Light mode text color */
+    --accent-color: #007bff; /* Light mode accent color */
+  
+    /* Dark mode variables (optional) */
+    --background-color-dark: #000;
+    --text-color-dark: #fff;
+    --accent-color-dark: #ff0000;
+  }
+
+.nav-routes{
+    margin-top: 80px;
+}
+body{
+    font-family: "Inter", sans-serif !important;
 }

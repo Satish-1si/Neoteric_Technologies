@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
     background-position: right;  
 }
+#IndustriesDark .LicenseHealth-main{
+    background-color:#2e2e33;
+}
+
 .LicenseHealth-main-left{
     width: 60%;
 }
@@ -20,6 +24,10 @@
 
 .LicenseHealth-description{
     font-size: 16px;
+}
+
+#IndustriesDark .LicenseHealth-description{
+    color: #E8E8E8;
 }
 
 .LicenseHealth-viewProjects{

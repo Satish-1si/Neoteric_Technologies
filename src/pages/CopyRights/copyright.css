@@ -1,0 +1,15 @@
+.CopyContainerDark{
+    padding:30px;
+    text-align: center;
+    background-color:#454545;
+    color:white
+
+
+}
+.CopyContainerLight{
+    padding:30px;
+    text-align: center;
+    background-color: #F5F5F7;
+    color:#454545;
+
+}

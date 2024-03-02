@@ -11,13 +11,15 @@ const Links=[
    ,{path:"contact",tittle:"Contacts Us"}
    ,{path:"News_Blog",tittle:"New&blogs"}
 ]
-export const ServiceLinks = () => {
+export const ServiceLinks = ({Mode}) => {
   return (
-     <div className='serviceLinks' >
-         <h4>Quick_links</h4>
+     <div className='serviceLinks col-lg-3 col-md-6 col-sm-12 col-12' >
+         <footerheading>Quick_links</footerheading>
          {
           Links.map(({path,tittle})=>{
-            return  <li key={v4()}><Link to={path}>{tittle}</Link></li>
+            return  <li key={v4()} ><Link to={path} style={Mode?{color:"white"}:{color:"black"}}>
+              {tittle}
+              </Link></li>
           })
          }
      </div>

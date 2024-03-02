@@ -1,11 +1,26 @@
-.PromoContainer{
-    height:500px;
-    width: 100vw;
-    padding:100px;
+.PromoContainer_Dark{
+  background-image: url("./Images/WhoWeAreDarkmode.svg");
+    height:100%;
+    padding:7%;
     display: flex;
     align-items: center;
-    border: solid;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color:white;
 }
+.PromoContainer_Light{
+  background-image: url("./Images/SectionBG.svg");
+    height:100%;
+    padding:7%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color:black;
+}
+
 .gradientHeading {
     background-clip: text;
     -webkit-background-clip: text;
@@ -22,9 +37,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 162.5%;
-    font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
-    max-width: 156px;
-    text-align: center;
+    max-width: auto;
+    text-align: start;
   }
   .usp-title_1{
     color: transparent;
@@ -44,6 +58,11 @@
     align-items: center;
     justify-content: center;
   }
-.sectionContainer{
-   width: 80.1vw;
-}
+  .sectionContainer{
+    width: 70%;
+ }
+ @media(max-width:770px){
+  .sectionContainer{
+    width: 100%;
+ }
+ }

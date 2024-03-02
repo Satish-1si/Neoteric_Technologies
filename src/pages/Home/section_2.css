@@ -1,19 +1,72 @@
 .GradientContainer{
-    height:500px;
-    width:99.9vw;
+    background-image: url(Images/Section2Bg.svg);
+    height:auto;
+    width:auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
 .Sol_Banner_TextContainer{
-    width: 70vw;
     display: flex;
     align-items: center;
     justify-content: center;
- 
+    padding: 10%;
 }
-.Sol_Banner_TextContainer h1{
-    font-size: 85px;
+.Sol_Banner_TextContainer p{
+    font-size: 128px;
     font-weight: 400;
     color: white;
+}
+.sectionContent{
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+
+@media(max-width:1300px) {
+    .Sol_Banner_TextContainer p{
+        font-size: 100px;
+        font-weight: 400;
+        color: white;
+    }
+} 
+@media(max-width:1070px) {
+    .Sol_Banner_TextContainer p{
+        font-size: 80px;
+        font-weight: 400;
+        color: white;
+    }
+} 
+@media(max-width:858px) {
+    .Sol_Banner_TextContainer p{
+        font-size: 60px;
+        font-weight: 400;
+        color: white;
+    }
+} 
+@media(max-width:710px) {
+    .Sol_Banner_TextContainer p{
+        font-size: 40px;
+        font-weight: 400;
+        color: white;
+    }
+} 
+@media(max-width:475px) {
+    .Sol_Banner_TextContainer p{
+        font-size: 35px;
+        font-weight: 400;
+        color: white;
+    }
+}
+@media(max-width:375px) {
+    .Sol_Banner_TextContainer p{
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+    }
 }

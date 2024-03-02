@@ -21,6 +21,10 @@
     font-size: 16px;
 }
 
+#IndustriesDark .Education-description{
+    color: #E8E8E8;
+}
+
 .Education-viewProjects{
     padding: 10px 0px;
     font-size: 20px;
